@@ -1,0 +1,31 @@
+<idea-plugin>
+    <idea-version since-build="3000"/>
+
+    <id>org.example.predict_plugin</id>
+    <name>RenamingPredict</name>
+    <vendor email="liangjiahui_x@nuaa.edu.cn" url="sial-lab.com">Sial-Lab</vendor>
+
+    <description><![CDATA[
+   Plugin for refactoring. From NUAA SIAL-LAB <br>
+    <em>XXXXXXXXXX</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <notificationGroup id="Custom Notification Group" displayType="BALLOON" key="notification.group.name"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+
+
+        <action id="PredictMethodNameID" class="PredictMethodNameClass" text="RenamingMethodDetaction"
+                description="Predict Method Name">
+            <add-to-group group-id="EditMenu" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
